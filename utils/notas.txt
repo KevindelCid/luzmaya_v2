@@ -1,0 +1,37 @@
+el calendario lunar cholqij consta de 260 dias 
+con los 20 nawales energias contando 1-13 
+
+el calendario aab consta de 365 dias sin contar años biciestos
+con 4 nawales y cada uno tarda 20 dias en un rango de 0 a 19 de energias 
+
+
+o sea
+recibo una fecha
+hago una resta para obtener la cantidad de dias transcurridos desde la fecha base de la cual conozco el cargador del años
+
+al obtener este dato divido / 365 y el sobrante es lo que usaré
+
+ese sobrante me dice cuantos dias debo de contar desde la fecha base en aab 
+
+tengo un array de strings que contiene los nawales posibles para usar como cargador del años
+
+
+
+
+
+
+
+
+duda cada cargador acompañado de su energia se mantiene durante los 365 dias y cuando terminan esos 365 dias deberia cambiar 
+unicamente la energia y al llegar a 19 de energia... en otras palabras necesitamos 20 años para que se cambie de cargador?
+
+
+
+21 de marzo de 1900 fue 5 noj
+
+los cargadores son: 
+noj iq keej E
+
+
+
+necesito ahora hacer funcionar el cale
