@@ -4,6 +4,7 @@ import { Image, Text, View, ScrollView } from "react-native";
 import { ModalContainer } from "./ModalContainer";
 import { infoNawals } from "../../utils";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { BrandColors } from "@/constants/Colors";
 
 export const NawalCard = ({
   imageSource,
@@ -30,7 +31,10 @@ export const NawalCard = ({
             style={{
               justifyContent: "center",
               alignItems: "center",
-              backgroundColor: colorScheme === "dark" ? "#444455" : "white",
+              backgroundColor:
+                colorScheme === "dark"
+                  ? BrandColors.primary
+                  : BrandColors.bgLight,
             }}
           >
             <Text

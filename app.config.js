@@ -45,7 +45,7 @@ export default {
       permissions: [],
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
-        backgroundColor: "transparent",
+        backgroundColor: "#ffffff",
       },
     },
     web: {
@@ -61,7 +61,7 @@ export default {
           image: "./assets/images/splash-icon.png",
           imageWidth: 200,
           resizeMode: "contain",
-          backgroundColor: "#ffffff",
+          backgroundColor: "#2E2E3B",
         },
       ],
     ],

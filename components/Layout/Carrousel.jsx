@@ -18,6 +18,7 @@ import { PrimaryButton } from "../ui/PrimaryButton";
 import { nawals } from "@/utils/info";
 import { getImage } from "@/utils";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { BrandColors } from "@/constants/Colors";
 
 const Item = ({ title, index, selectedItemIndex, textColor }) => (
   <View
@@ -76,7 +77,7 @@ export const Carrousel = ({
         data={nawals}
         renderItem={({ item, index }) => (
           <Item
-            textColor={colorScheme === "dark" ? "white" : "#444455"}
+            textColor={colorScheme === "dark" ? "white" : BrandColors.primary}
             title={item}
             index={index}
             selectedItemIndex={selectedItemIndex}
@@ -109,7 +110,7 @@ export const Carrousel = ({
           <Icon
             name="chevron-left"
             size={35}
-            color={colorScheme === "dark" ? "white" : "#444455"}
+            color={colorScheme === "dark" ? "white" : BrandColors.primary}
           />
         </Pressable>
 
@@ -118,7 +119,7 @@ export const Carrousel = ({
             fontSize: 35,
             width: 100,
             textAlign: "center",
-            color: colorScheme === "dark" ? "white" : "#444455",
+            color: colorScheme === "dark" ? "white" : BrandColors.primary,
           }}
         >
           {energyCounter}
@@ -133,7 +134,7 @@ export const Carrousel = ({
           <Icon
             name="chevron-right"
             size={35}
-            color={colorScheme === "dark" ? "white" : "#444455"}
+            color={colorScheme === "dark" ? "white" : BrandColors.primary}
           />
         </Pressable>
       </View>
@@ -143,7 +144,7 @@ export const Carrousel = ({
           onPress={() => {
             handleCalculate();
           }}
-          color={"#444488"}
+          color={BrandColors.secondary}
         />
       </View>
     </SafeAreaView>

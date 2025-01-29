@@ -1,14 +1,15 @@
 import React from "react";
 import { Text, View, Image, StatusBar } from "react-native";
 import { getImage } from "../../utils/images";
+import { BrandColors } from "@/constants/Colors";
 
 export const Header = () => {
   return (
     <>
-      <StatusBar backgroundColor="#444455" />
+      <StatusBar backgroundColor={BrandColors.primary} />
       <View
         style={{
-          backgroundColor: "#444455",
+          backgroundColor: BrandColors.primary,
           height: 80,
           width: "100%",
           justifyContent: "center",
