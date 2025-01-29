@@ -14,7 +14,8 @@
     "preview": {
       "distribution": "internal",
       "env": {
-        "APP_VARIANT": "preview"
+        "APP_VARIANT": "preview",
+        "GRADLE_DAEMON": "false"
       }
     },
     "production": {

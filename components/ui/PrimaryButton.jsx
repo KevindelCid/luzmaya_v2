@@ -1,3 +1,4 @@
+import { BrandColors } from "@/constants/Colors";
 import React from "react";
 import { View, Text, Pressable } from "react-native";
 
@@ -14,13 +15,13 @@ export const PrimaryButton = ({
           borderRadius: 12,
           minHeight: 40,
           width: "100%",
-          backgroundColor: color || "#444455",
+          backgroundColor: color || BrandColors.primary,
           justifyContent: "center",
           alignItems: "center",
           flex: 1,
         }}
       >
-        <Text style={{ color: "#fff" }}>{label}</Text>
+        <Text style={{ color: "white" }}>{label}</Text>
       </View>
     </Pressable>
   );

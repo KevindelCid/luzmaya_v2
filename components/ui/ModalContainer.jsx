@@ -1,3 +1,4 @@
+import { BrandColors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import React from "react";
 import { View, Pressable, Text, Modal, StyleSheet } from "react-native";
@@ -19,14 +20,18 @@ export const ModalContainer = ({
         transparent={true}
         visible={isVisible}
         style={{
-          backgroundColor: colorScheme === "dark" ? "#2E2E3B" : "white",
+          backgroundColor:
+            colorScheme === "dark" ? BrandColors.bgDark : BrandColors.bgLight,
         }}
       >
         <View style={styles.modalContainer}>
           <View
             style={{
               ...styles.modalContent,
-              backgroundColor: colorScheme === "dark" ? "#444455" : "white",
+              backgroundColor:
+                colorScheme === "dark"
+                  ? BrandColors.primary
+                  : BrandColors.bgLight,
 
               height: whitOutMeaning ? 340 : 600,
             }}

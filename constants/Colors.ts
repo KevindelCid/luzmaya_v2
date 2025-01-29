@@ -24,3 +24,11 @@ export const Colors = {
     tabIconSelected: tintColorDark,
   },
 };
+
+
+export const BrandColors = {
+  bgDark: "#2E2E3B",
+  bgLight: "#ffff",
+  primary: "#444455",
+  secondary: "#444488",
+};
