@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# LuzMaya App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Inicio rápido con EAS Development Build
 
-## Get started
+Este proyecto utiliza **EAS Build** y **expo-dev-client**, por lo que NO es compatible con la app Expo Go estándar. Debes instalar una Development Build personalizada en tu dispositivo para poder ejecutar la app localmente.
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Instalar dependencias
 
 ```bash
-npm run reset-project
+npm install
+# o
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Generar una Development Build (solo la primera vez o si cambian las dependencias nativas)
 
-## Learn more
+#### Android
+```bash
+eas build --profile development --platform android
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+#### iOS
+```bash
+eas build --profile development --platform ios
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Descarga e instala la app resultante en tu dispositivo (puedes escanear el QR que te da EAS o descargar el .apk/.ipa desde la web de EAS Build).
 
-## Join the community
+### 3. Iniciar el servidor local
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start --dev-client
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Escanea el QR con tu Development Build instalada (NO con Expo Go).
+
+### 4. Notas adicionales
+
+- Si ves la opción "Development Build" al escanear el QR, selecciona tu build personalizada.
+- Si la app se queda cargando en Expo Go, revisa que estés usando la Development Build.
+- Puedes cambiar entre variantes usando los scripts de npm o modificando variables de entorno en los perfiles de `eas.json`.
+
+---
+
+## Recursos útiles
+- [Documentación oficial EAS Build](https://docs.expo.dev/build/introduction/)
+- [expo-dev-client](https://docs.expo.dev/clients/installation/)
+
+---
+
+Si tienes dudas sobre el flujo de desarrollo, revisa este README o contacta al responsable del proyecto.

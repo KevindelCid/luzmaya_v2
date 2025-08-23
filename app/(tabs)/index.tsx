@@ -16,7 +16,7 @@ import { Footer } from "@/components/Layout/Footer";
 import { SplashScreen } from "expo-router";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import * as Application from "expo-application";
+// import * as Application from "expo-application";
 
 export default function HomeScreen() {
   const colorScheme = useColorScheme();
@@ -32,11 +32,11 @@ export default function HomeScreen() {
   useEffect(() => {
     setLunations(getMayanDate(selectedDate.usableDate));
 
-    const getReferrerData = async () => {
-      const referrerData = await Application.getInstallReferrerAsync();
-      console.log("code line-37 \n\r😉 referrerData:\n\r", referrerData);
-    };
-    getReferrerData();
+    // const getReferrerData = async () => {
+    //   const referrerData = await Application.getInstallReferrerAsync();
+    //   console.log("code line-37 \n\r😉 referrerData:\n\r", referrerData);
+    // };
+    // getReferrerData();
   }, [selectedDate]);
 
   return (

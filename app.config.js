@@ -43,6 +43,7 @@ export default {
       package: getUniqueIdentifier(),
       versionCode: 2,
       permissions: [],
+      targetSdkVersion: 35,
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
         backgroundColor: "#ffffff",
