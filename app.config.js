@@ -46,7 +46,7 @@ export default {
       targetSdkVersion: 35,
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
-        backgroundColor: "#ffffff",
+        backgroundColor: "#444455",
       },
     },
     web: {
@@ -62,7 +62,7 @@ export default {
           image: "./assets/images/splash-icon.png",
           imageWidth: 200,
           resizeMode: "contain",
-          backgroundColor: "#ffffff",
+          backgroundColor: "#444455",
         },
       ],
     ],

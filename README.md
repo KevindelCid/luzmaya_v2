@@ -48,4 +48,19 @@ Escanea el QR con tu Development Build instalada (NO con Expo Go).
 
 ---
 
+
+
+## Generar una version para desarrollo
+
+```
+npx eas build --profile development --platform android
+```
+
+## Generar una version para produccion
+
+```
+npx eas build --profile production --platform android
+```
+
+
 Si tienes dudas sobre el flujo de desarrollo, revisa este README o contacta al responsable del proyecto.
