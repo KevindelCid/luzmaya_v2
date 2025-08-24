@@ -2,6 +2,9 @@
   "name": "luzmaya",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "resolutions": {
+    "expo-modules-autolinking": "2.0.8"
+  },
   "scripts": {
     "dev": "APP_VARIANT=development npx expo start",
     "start": "expo start",
