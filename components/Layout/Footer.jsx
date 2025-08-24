@@ -24,7 +24,7 @@ export const Footer = () => {
           {phrases.footerMessage}
         </Text>
         <Text
-          style={{ color: "white", textAlign: "justify", marginBottom: 10 }}
+          style={{ color: "white", textAlign: "justify", marginBottom:0 }}
         >
           {phrases.copyRight}
         </Text>
@@ -36,18 +36,9 @@ export const Footer = () => {
             marginBottom: 10,
           }}
         >
-          {phrases.develpment.message}
+          {phrases.develpment.message + " " + phrases.develpment.developer.name }
         </Text>
-        <Text
-          style={{
-            alignSelf: "flex-start",
-            color: "white",
-            textAlign: "justify",
-            marginBottom: 10,
-          }}
-        >
-          {phrases.develpment.developer.name}
-        </Text>
+        
         <View
           style={{
             justifyContent: "center",

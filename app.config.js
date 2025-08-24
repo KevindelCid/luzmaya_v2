@@ -1,3 +1,5 @@
+import withCustomPermissions from "./withCustomPermissions";
+
 const IS_DEV = process.env.APP_VARIANT === "development";
 const IS_PREVIEW = process.env.APP_VARIANT === "preview";
 
@@ -55,6 +57,7 @@ export default {
       favicon: "./assets/images/favicon.png",
     },
     plugins: [
+      withCustomPermissions,
       "expo-router",
       [
         "expo-splash-screen",

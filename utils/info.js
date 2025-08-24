@@ -456,7 +456,7 @@ export const phrases = {
   footerMessage:
     "Es sumamente importante insistir en que la descripción e interpretación anterior, es básica y general, por lo que, para el estudio a profundidad de la personalidad según esta forma de contar el tiempo llamada Cholq´ij, es menester acercarse a las abuelas y abuelos Ajq´ijab´ -contadores del tiempo-.",
   copyRight:
-    "© Los metodos utilizados para la creación de esta aplicación fueron obtenidos del libro << El Calendario Sagrado Maya, Método para el Cómputo del Tiempo >> del Maestro y Ajq'ij Audelino Sac Coyoy, con apoyo del Maestro Daniel Matúl y dirección del Dr. Jorge Fernando Flores Zepeda",
+    `© Los métodos utilizados para la creación de esta aplicación fueron obtenidos directamente del ajq’ij Audelino Sac Coyoy, cuya obra "El Calendario Sagrado Maya: Método para el Cómputo del Tiempo" constituye una fuente esencial de conocimiento. Asimismo, se contó con el invaluable apoyo del Dr. Daniel Matul Morales y la dirección del Dr. Jorge Flores Zepeda.`,
   sponsors: [
     {
       name: "Ideas Diseño Web",
