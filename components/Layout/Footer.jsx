@@ -40,7 +40,7 @@ export const Footer = () => {
         </Text>
         
         <View
-          style={{
+          style={{ 
             justifyContent: "center",
             flexDirection: "row",
             alignItems: "center",
